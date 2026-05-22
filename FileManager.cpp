@@ -1,22 +1,3 @@
-/*
- * Console File Manager - Proyecto POSIX en C++
- *
- * Este programa implementa un gestor de archivos de consola utilizando ncurses,
- * cumpliendo con todos los requisitos del proyecto:
- * - Panel izquierdo: explorador de archivos con columnas, toggles y ordenamiento.
- * - Panel derecho: vistas de texto, hexadecimal, propiedades y árbol.
- * - Barra de estado: usuario, atajos y reloj en hilo dedicado.
- * - Operaciones: copiar, mover, chmod, eliminar, crear archivo/directorio,
- *   ejecutar, abrir con nano; todas mediante fork/exec/wait.
- * - Gestión de procesos, memoria, IPC (pipe + hilo de refresco con inotify),
- *   concurrencia con pthreads, entrada en modo raw con ncurses.
- *
- * Compilación:
- *   g++ -std=c++17 -pthread -lncurses -o filemanager filemanager.cpp
- * Ejecución:
- *   ./filemanager
- */
-
 #include <algorithm>
 #include <atomic>
 #include <chrono>
